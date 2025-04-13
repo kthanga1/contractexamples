@@ -42,23 +42,17 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
         // return _balances[owner];
     }
 
-    /**
-     * @dev See {IERC721-ownerOf}.
-     */
+ 
     function ownerOf(uint256 tokenId) public view virtual returns (address) {
         return _owners[tokenId];
     }
 
-    /**
-     * @dev See {IERC721Metadata-name}.
-     */
+   
     function name() public view virtual returns (string memory) {
         return _name;
     }
 
-    /**
-     * @dev See {IERC721Metadata-symbol}.
-     */
+   
     function symbol() public view virtual returns (string memory) {
         return _symbol;
     }
@@ -117,16 +111,12 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
 
         return from;
     }
-    /**
-     * @dev See {IERC721-safeTransferFrom}.
-     */
+  
     function safeTransferFrom(address from, address to, uint256 tokenId) public {
         safeTransferFrom(from, to, tokenId, "");
     }
 
-    /**
-     * @dev See {IERC721-safeTransferFrom}.
-     */
+  
     function safeTransferFrom(address from, address to, uint256 tokenId, bytes memory data) public virtual{
         transferFrom(from, to, tokenId);
         // checkOnERC721Received(_msgSender(), from, to, tokenId, data);
@@ -146,9 +136,7 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
         _approve(to, tokenId, _msgSender());
     }
 
-    /**
-     * @dev See {IERC721-getApproved}.
-     */
+   
     function getApproved(uint256 tokenId) public view virtual returns (address) {
         _requireOwned(tokenId);
 
@@ -159,10 +147,7 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
         _approve(to, tokenId, auth, true);
     }
 
-    /**
-     * @dev Variant of `_approve` with an optional flag to enable or disable the {Approval} event. The event is not
-     * emitted in the context of transfers.
-     */
+   
     function _approve(address to, uint256 tokenId, address auth, bool emitEvent) internal virtual {
         // Avoid reading the owner unless necessary
         if (emitEvent || auth != address(0)) {
@@ -181,9 +166,7 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
         _tokenApprovals[tokenId] = to;
     }
 
-    /**
-     * @dev See {IERC721-setApprovalForAll}.
-     */
+   
     function setApprovalForAll(address operator, bool approved) public virtual {
         _setApprovalForAll(_msgSender(), operator, approved);
     }
@@ -196,9 +179,7 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
         emit ApprovalForAll(owner, operator, approved);
     }
 
-    /**
-     * @dev See {IERC721-isApprovedForAll}.
-     */
+   
     function isApprovedForAll(address owner, address operator) public view virtual returns (bool) {
         return _operatorApprovals[owner][operator];
     }

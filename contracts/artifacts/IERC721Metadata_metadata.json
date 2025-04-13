@@ -53,26 +53,12 @@
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {
-				"tokenURI(uint256)": {
-					"details": "Throws if `_tokenId` is not a valid NFT. URIs are defined in RFC  3986. The URI may point to a JSON file that conforms to the \"ERC721  Metadata JSON Schema\"."
-				}
-			},
+			"methods": {},
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"name()": {
-					"notice": "A descriptive name for a collection of NFTs in this contract"
-				},
-				"symbol()": {
-					"notice": "An abbreviated name for NFTs in this contract"
-				},
-				"tokenURI(uint256)": {
-					"notice": "A distinct Uniform Resource Identifier (URI) for a given asset."
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
@@ -93,11 +79,11 @@
 	},
 	"sources": {
 		"contracts/IERC721.sol": {
-			"keccak256": "0x53c7bd2c67cec6ecfb792a9ffc8afeb512bcdcaac65289190764bb64e3131ac4",
+			"keccak256": "0x5713f256e5905fd48dac19ad49dd3c3ee33ff3de5b9a24a26612ef474f6782af",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://739a086af4ccaff76f93c7bf324a13918ab6b9a41e304472ff3da344d46bc853",
-				"dweb:/ipfs/QmSvhXUfDmBQE7btmvTYb66YzAyA7CtnGsVz9gartNYond"
+				"bzz-raw://8ba5f47d0cd0108f5e482fcad3b78b50a31c9aebbeaa67e3239deb0b05aee579",
+				"dweb:/ipfs/QmcxgyZc1BKuBeyX57dTv4qNGqPpgyPU52cKpWvKMY7jB7"
 			]
 		}
 	},

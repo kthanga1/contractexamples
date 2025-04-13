@@ -409,39 +409,22 @@
 			},
 			"kind": "dev",
 			"methods": {
-				"getApproved(uint256)": {
-					"details": "See {IERC721-getApproved}."
-				},
-				"isApprovedForAll(address,address)": {
-					"details": "See {IERC721-isApprovedForAll}."
-				},
-				"name()": {
-					"details": "See {IERC721Metadata-name}."
-				},
-				"ownerOf(uint256)": {
-					"details": "See {IERC721-ownerOf}."
-				},
-				"safeTransferFrom(address,address,uint256)": {
-					"details": "See {IERC721-safeTransferFrom}."
-				},
-				"safeTransferFrom(address,address,uint256,bytes)": {
-					"details": "See {IERC721-safeTransferFrom}."
-				},
-				"setApprovalForAll(address,bool)": {
-					"details": "See {IERC721-setApprovalForAll}."
-				},
 				"supportsInterface(bytes4)": {
 					"details": "See {IERC165-supportsInterface}."
-				},
-				"symbol()": {
-					"details": "See {IERC721Metadata-symbol}."
 				}
 			},
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {},
+			"methods": {
+				"name()": {
+					"notice": "A descriptive name for a collection of NFTs in this contract"
+				},
+				"symbol()": {
+					"notice": "An abbreviated name for NFTs in this contract"
+				}
+			},
 			"version": 1
 		}
 	},
@@ -462,19 +445,19 @@
 	},
 	"sources": {
 		"contracts/ERC721.sol": {
-			"keccak256": "0x82e633b89f67c94b139b0914a9d39980568cbf879f7a15f91557d92961fc62a9",
+			"keccak256": "0x89cb97de5f01550eb054ace208fab27033b0bfb5cee471e17172989f67d9deac",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://8500fe2068330c6dc904f0148a997fbc166482d0b8d3f0f765b491dad0539a08",
-				"dweb:/ipfs/QmerVg3yiwxafX8zWWj4QtirRyKuBnz2MKFFAWTnwMw1Zy"
+				"bzz-raw://f41ff5e982757d20cda412c10627f6cf3c68624a542031e701a555c04d3988d0",
+				"dweb:/ipfs/QmPhmTrgr9nhz9DyGQzmnuERtFEf584sKgXAHM67JRzUzc"
 			]
 		},
 		"contracts/IERC721.sol": {
-			"keccak256": "0x57bc79f19613970349a316784e248378485107c048466a9c0d28145c19242f18",
+			"keccak256": "0x53c7bd2c67cec6ecfb792a9ffc8afeb512bcdcaac65289190764bb64e3131ac4",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://557eb3bb0539502e11ba2fdd61692e899868551e3611eac5297764b33887d164",
-				"dweb:/ipfs/QmbcBXgvBJYSw6e99ShqjZN9RU6mAeYJM2QFSdERZjA1AY"
+				"bzz-raw://739a086af4ccaff76f93c7bf324a13918ab6b9a41e304472ff3da344d46bc853",
+				"dweb:/ipfs/QmSvhXUfDmBQE7btmvTYb66YzAyA7CtnGsVz9gartNYond"
 			]
 		}
 	},
