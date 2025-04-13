@@ -4,15 +4,17 @@ pragma solidity ^0.8.20;
 
 import "./IERC721.sol";
 
-abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
+// import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
+//Code reference - 
+//https://github.com/OpenZeppelin/openzeppelin-contracts/blob/1873ecb38e0833fa3552f58e639eeeb134b82135/contracts/token/ERC721/ERC721.sol
+
+
+abstract contract ERC721 is IERC721, ERC165{
 
     // using string for uint256;
 
-    // Token name
-    string private _name;
-
-    // Token symbol
-    string private _symbol;
+   
 
     error InvalidAddress(address receiver);
 
@@ -30,10 +32,6 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
     mapping(address owner => mapping(address operator => bool)) private _operatorApprovals;
 
 
-    constructor(string memory name_, string memory symbol_) {
-        _name = name_;
-        _symbol = symbol_;
-    }
 
     function balanceOf(address owner) public view virtual returns (uint256) {
         // if (owner == address(0)) {
@@ -45,16 +43,6 @@ abstract contract ERC721 is IERC721, IERC721Metadata, ERC165{
  
     function ownerOf(uint256 tokenId) public view virtual returns (address) {
         return _owners[tokenId];
-    }
-
-   
-    function name() public view virtual returns (string memory) {
-        return _name;
-    }
-
-   
-    function symbol() public view virtual returns (string memory) {
-        return _symbol;
     }
 
     
