@@ -6,11 +6,6 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
-				"stateMutability": "nonpayable",
-				"type": "constructor"
-			},
-			{
 				"inputs": [
 					{
 						"internalType": "uint256",
@@ -219,19 +214,6 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "message",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
 					}
 				],
 				"stateMutability": "view",
@@ -465,7 +447,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/TokenContract.sol": "TokenContract"
+			"contracts/ERC721.sol": "ERC721"
 		},
 		"evmVersion": "shanghai",
 		"libraries": {},
@@ -488,19 +470,11 @@
 			]
 		},
 		"contracts/IERC721.sol": {
-			"keccak256": "0x53c7bd2c67cec6ecfb792a9ffc8afeb512bcdcaac65289190764bb64e3131ac4",
+			"keccak256": "0x57bc79f19613970349a316784e248378485107c048466a9c0d28145c19242f18",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://739a086af4ccaff76f93c7bf324a13918ab6b9a41e304472ff3da344d46bc853",
-				"dweb:/ipfs/QmSvhXUfDmBQE7btmvTYb66YzAyA7CtnGsVz9gartNYond"
-			]
-		},
-		"contracts/TokenContract.sol": {
-			"keccak256": "0x94059ca3befbd8690f3911b44a27673c7c1ce74a1912241c2ec83669a54117bb",
-			"license": "MIT",
-			"urls": [
-				"bzz-raw://ab274b7fd9d3fe9d4d420cfab21ec0eaebfd505710366d27a223be131e7d2c47",
-				"dweb:/ipfs/QmNjpa42pF3nsBoqT1kJG78stqfVxnyrSiFHruuRRrWeCC"
+				"bzz-raw://557eb3bb0539502e11ba2fdd61692e899868551e3611eac5297764b33887d164",
+				"dweb:/ipfs/QmbcBXgvBJYSw6e99ShqjZN9RU6mAeYJM2QFSdERZjA1AY"
 			]
 		}
 	},

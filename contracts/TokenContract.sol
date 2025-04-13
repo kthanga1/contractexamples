@@ -3,12 +3,14 @@
 
 pragma solidity ^0.8.20;
 
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+// import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+
 //Code reference - https://github.com/OpenZeppelin/openzeppelin-contracts/blob/1873ecb38e0833fa3552f58e639eeeb134b82135/contracts/token/ERC721/ERC721.sol
+
+import "./ERC721.sol";
 
 contract TokenContract is ERC721{
     
-    event Token(address sender, string name);
     string private _message;
 
     bytes32 private _test;
@@ -21,10 +23,7 @@ contract TokenContract is ERC721{
     function message() public view   virtual returns (string memory) {
         return _message;
     }
-    function test() public view   virtual returns (uint32) {
-        return 2+4;
-    }
-
+   
     function name() public view  override  virtual returns (string memory) {
         return super.name();
     }
@@ -32,8 +31,6 @@ contract TokenContract is ERC721{
         return super.symbol();
     }
 
-    function getTokenName() external {
-         emit Token( msg.sender , super.name());
-    }
+ 
 
 }
