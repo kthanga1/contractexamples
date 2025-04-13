@@ -10,12 +10,19 @@ contract TokenContract is ERC721{
     
     event Token(address sender, string name);
     string private _message;
+
+    bytes32 private _test;
+
     constructor() ERC721("selfish-square", "SFFHFELHFA"){
         _message = "Metaverse NFT identity solutions - kthanga1"; //"Metaverse NFT identity solutions - kthanga1";
+        _test= "YES";
      } 
 
     function message() public view   virtual returns (string memory) {
         return _message;
+    }
+    function test() public view   virtual returns (uint32) {
+        return 2+4;
     }
 
     function name() public view  override  virtual returns (string memory) {
